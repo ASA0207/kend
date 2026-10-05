@@ -1,13 +1,11 @@
-# KEND GUILD — Super Shy Edition
+# KEND GUILD — Super Shy Recruit Ultimate
 
-GitHub Pages 배포용 완성본.
+업데이트:
+- 신규 `가입 방식 / RECRUITMENT CARD` 섹션
+- 인겜닉 / 레벨(색 포함) / 나이 / 성별 / MBTI / 주맵 / 테런&디코 시간대 / Discord ID
+- `COPY APPLICATION` 버튼으로 가입 양식 원클릭 복사
+- 기존 Super Shy BGM, 음악 입장/조용히 입장, 8% 페이드인 플레이어 유지
+- 배경 오브, 미세 그리드, 카드 글로우, JOIN/KEND 타이포그래피 등 시각 품질 업그레이드
+- 모바일 반응형 유지
 
-- NewJeans — Super Shy BGM 포함
-- 시작 화면: 음악과 함께 입장 / 조용히 입장
-- 기본 BGM 볼륨 8%
-- 입장 시 부드러운 볼륨 페이드인
-- 우측 하단 재생/정지 + 볼륨 조절 + 진행 표시
-- 모바일 반응형
-- 기존 켄드 길드 안내/규칙/채널/비밀번호 520 유지
-
-ZIP 압축을 풀어 저장소 루트에 전체 파일/폴더를 그대로 업로드하세요.
+GitHub Pages 저장소 루트에 ZIP 내부 파일을 그대로 업로드하세요.
