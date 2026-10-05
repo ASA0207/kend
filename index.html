@@ -15,8 +15,18 @@ section{padding:90px 6%}.kick{font:700 9px monospace;letter-spacing:.17em;color:
 .final{text-align:center;padding:120px 6%;background:radial-gradient(circle,#2d1d3d,#090812 60%)}.final h2{font-size:clamp(70px,13vw,145px);margin:0;letter-spacing:-.07em;background:linear-gradient(90deg,#fff0dd,#ff95c1,#81e8ff);-webkit-background-clip:text;color:transparent}.final p{color:#9b94a1;line-height:2}
 .reveal{opacity:0;transform:translateY(22px);transition:.75s}.reveal.on{opacity:1;transform:none}footer{text-align:center;padding:28px;border-top:1px solid #ffffff10;color:#645d6d;font:700 8px monospace}
 @media(max-width:760px){.links{display:none}.grid2,.opsgrid,.channels{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.music{grid-column:auto}.hero h1{font-size:65px}}
+
+.entryActions{display:flex;justify-content:center;gap:9px;margin-top:22px;flex-wrap:wrap}
+.entryActions .enter{margin-top:0}.silent{padding:15px 20px;border-radius:99px;border:1px solid #ffffff22;background:#090812aa;color:#aaa2b3;font:700 9px monospace;letter-spacing:.1em;cursor:pointer;transition:.25s}.silent small{font-size:7px;color:#6f6877;margin-left:5px}.silent:hover{color:#fff;border-color:#7ee8ff66;box-shadow:0 0 28px #70e6ff18;transform:translateY(-2px)}
+.musicPlayer{position:fixed;right:18px;bottom:18px;z-index:90;width:min(390px,calc(100% - 36px));display:grid;grid-template-columns:43px 1fr auto;gap:12px;align-items:center;padding:12px;border:1px solid #ffffff1c;border-radius:18px;background:#0d0a15e8;backdrop-filter:blur(20px);box-shadow:0 18px 55px #0008;transition:.35s}
+.musicPlayer.paused{opacity:.8}.musicPlayer button{width:43px;height:43px;border-radius:50%;border:1px solid #ffffff25;background:linear-gradient(145deg,#ff6fae22,#70e6ff18);color:#fff;cursor:pointer;font-size:13px}.musicMeta{min-width:0}.musicMeta small{display:block;font:700 7px monospace;letter-spacing:.11em;color:#756e80}.musicMeta strong{display:inline-block;font-size:11px;margin-top:3px}.musicMeta span{font-size:9px;color:#837b8c;margin-left:7px}.progress{height:2px;background:#ffffff16;margin-top:7px;overflow:hidden}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff6fae,#9b7cff,#70e6ff)}
+.volumeBox{display:flex;align-items:center;gap:6px}.volumeBox span{font:700 7px monospace;color:#81798c;width:23px}.volumeBox input{width:68px;accent-color:#ff6fae}
+@media(max-width:600px){.musicPlayer{right:10px;bottom:10px;width:calc(100% - 20px)}.volumeBox input{width:48px}.entryActions{flex-direction:column}.entryActions button{width:100%}}
 </style></head><body class="lock">
-<div id="intro"><div class="intro"><div class="micro">TALESRUNNER · SOCIAL GUILD</div><div class="logo">켄드</div><p>같이 달리고, 같이 웃고, 오래 남는 곳.</p><button class="enter" id="enter">ENTER KEND · 입장하기</button></div></div>
+<div id="intro"><div class="intro"><div class="micro">TALESRUNNER · SOCIAL GUILD</div><div class="logo">켄드</div><p>같이 달리고, 같이 웃고, 오래 남는 곳.</p><div class="entryActions">
+<button class="enter" id="enter">♫ 음악과 함께 입장</button>
+<button class="silent" id="silentEnter">조용히 입장 <small>BGM OFF</small></button>
+</div></div></div>
 <nav><div class="brand">켄드<i>●</i></div><div class="links"><a href="#about">ABOUT</a><a href="#rules">RULES</a><a href="#channel">CHANNEL</a><a href="#guide">GUIDE</a></div></nav>
 <header class="hero"><div class="wrap"><span class="tag">● KEND · NEW RUNNERS WELCOME</span><h1>같이 달리고<span>오래 함께해요.</span></h1><div class="grid2"><p class="lead">안녕하세요! 켄드 길드를 총 담당하고 있는 길드마스터 <b>홍연화</b>입니다. 켄드는 서로를 존중하며 잠깐 스쳐가기보다 <b>오래 함께하는 친목 길드</b>를 지향합니다. 새로 오신 분들도 너무너무 환영합니다. 오늘도 즐거운 런너, 모두 <b>해피런너!</b></p><div class="profile"><small>MASTER / STAFF</small><strong>길드마스터 · 홍연화 👑</strong><div class="pills"><span class="pill hot">MASTER 홍연화</span><span class="pill">SUB 듣코</span><span class="pill">신입 환영</span><span class="pill">친목 길드</span></div></div></div></div></header>
 <div class="ticker">KEND · RESPECT EACH OTHER · HAPPY RUNNER · GUILD QUEST FREE · OCCUPATION FREE · DISCORD ACTIVE · KEND · RESPECT EACH OTHER · HAPPY RUNNER ·</div>
@@ -26,7 +36,31 @@ section{padding:90px 6%}.kick{font:700 9px monospace;letter-spacing:.17em;color:
 <section class="ops" id="guide"><div class="wrap reveal"><div class="kick">04 / OPERATION</div><div class="title">자유롭지만,<br>소통은 확실하게.</div><div class="opsgrid"><div class="free"><small>KEND POLICY</small><strong>FREE</strong><p>길퀘 자유 · 점령 자유 · 타 게임 자유. 대신 함께 사용하는 공간의 규칙과 소통은 꼭 지켜주세요.</p></div><div class="list"><div class="item"><b>⚡ 길드 퀘스트 & 점령전</b><span>기본 자유 참여. 필요한 일정은 미리 말해주세요. 초심 격주 점령전 운영 시 참여 관련 안내를 확인해주세요.</span></div><div class="item"><b>💬 디스코드 활동 필수</b><span>활동이 지나치게 적거나 확인되지 않을 경우 자동 탈퇴 처리될 수 있습니다.</span></div><div class="item"><b>🔊 TTS 안내</b><span>혼자 있을 때 길드원이 들어온 것을 놓치지 않도록 상황에 맞게 <b>/tts</b>를 사용해주세요.</span></div><div class="item"><b>🌱 운영 목적</b><span>활발하고 화목한 친목 길드를 만들기 위한 운영 방침입니다. 서로 조금씩 배려해주세요.</span></div></div></div></div></section>
 <section class="pass"><div class="wrap reveal"><div class="kick">05 / FIXED PASSWORD</div><div class="title">길드 고정 비밀번호</div><div class="passbox"><small>KEND GUILD PASSWORD</small><div class="number">520</div><p>추후 변경 시 공지사항을 통해 다시 안내됩니다.</p></div></div></section>
 <section class="final"><div class="wrap reveal"><div class="kick">WELCOME TO KEND</div><h2>해피런너!</h2><p>켄드와 함께해 주시는 모든 분들께 진심으로 감사합니다.<br>항상 좋은 일만 가득하시길 바라며 오늘도 즐거운 런너 되세요. 😊</p></div></section>
+
+<div class="musicPlayer paused" id="musicPlayer">
+  <button id="playBtn" aria-label="재생/정지">▶</button>
+  <div class="musicMeta">
+    <small>KEND RADIO · NOW PLAYING</small>
+    <strong>SUPER SHY</strong>
+    <span>NewJeans</span>
+    <div class="progress"><i id="progressBar"></i></div>
+  </div>
+  <div class="volumeBox"><span id="volText">8%</span><input id="volume" type="range" min="0" max="100" value="8"></div>
+</div>
+<audio id="bgm" preload="auto" loop><source src="assets/super-shy.mp3" type="audio/mpeg"></audio>
 <footer>KEND · TALESRUNNER GUILD · MASTER HONGYEONHWA · SUBMASTER DEUTKO</footer>
 <script>
-const intro=document.getElementById("intro"),enter=document.getElementById("enter");function go(){document.body.classList.remove("lock");document.body.classList.add("entered");intro.classList.add("out");setTimeout(()=>intro.remove(),1000)}enter.addEventListener("click",go);addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&document.body.classList.contains("lock"))go()});const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("on")}),{threshold:.1});document.querySelectorAll(".reveal").forEach(e=>io.observe(e));
+const intro=document.getElementById("intro"),enter=document.getElementById("enter"),silentEnter=document.getElementById("silentEnter");
+const bgm=document.getElementById("bgm"),playBtn=document.getElementById("playBtn"),volume=document.getElementById("volume"),volText=document.getElementById("volText"),musicPlayer=document.getElementById("musicPlayer"),progressBar=document.getElementById("progressBar");
+const targetVolume=.08; let fadeTimer=null;
+bgm.volume=targetVolume;
+function finishEntry(){document.body.classList.remove("lock");document.body.classList.add("entered");intro.classList.add("out");setTimeout(()=>intro.remove(),1000)}
+function musicEntry(){if(document.body.classList.contains("entered"))return;finishEntry();bgm.volume=0;bgm.play().then(()=>{musicPlayer.classList.remove("paused");playBtn.textContent="Ⅱ";clearInterval(fadeTimer);fadeTimer=setInterval(()=>{bgm.volume=Math.min(targetVolume,bgm.volume+.004);volume.value=Math.round(bgm.volume*100);volText.textContent=Math.round(bgm.volume*100)+"%";if(bgm.volume>=targetVolume)clearInterval(fadeTimer)},55)}).catch(()=>{})}
+function silentEntry(){if(document.body.classList.contains("entered"))return;clearInterval(fadeTimer);bgm.pause();bgm.currentTime=0;bgm.volume=targetVolume;musicPlayer.classList.add("paused");playBtn.textContent="▶";finishEntry()}
+enter.addEventListener("click",musicEntry);silentEnter.addEventListener("click",silentEntry);
+addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&document.body.classList.contains("lock"))musicEntry()});
+playBtn.addEventListener("click",()=>{if(bgm.paused){bgm.play();playBtn.textContent="Ⅱ";musicPlayer.classList.remove("paused")}else{bgm.pause();playBtn.textContent="▶";musicPlayer.classList.add("paused")}});
+volume.addEventListener("input",()=>{bgm.volume=Number(volume.value)/100;volText.textContent=volume.value+"%"});
+bgm.addEventListener("timeupdate",()=>{progressBar.style.width=(bgm.duration?bgm.currentTime/bgm.duration*100:0)+"%"});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("on")}),{threshold:.1});document.querySelectorAll(".reveal").forEach(e=>io.observe(e));
 </script></body></html>
